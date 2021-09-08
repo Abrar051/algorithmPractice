@@ -35,6 +35,18 @@ public class practiceCode {
     {
         int remainder=0;
         int i=0;
+        if (x>10 && x%10==0)
+        {
+            while (x%10==0)
+            {
+                x=x/10;
+                i++;
+                if (x<=10)
+                {
+                    return i+2;
+                }
+            }
+        }
         if (x/10<1)
         {
             return 1;
@@ -103,7 +115,7 @@ public class practiceCode {
         int[] nums= {3,3};
         int target=6;
         //System.out.println(Arrays.toString(twoSum(nums,target)));
-        System.out.println(findNumber(123));
+        System.out.println(findNumber(100));
         System.out.println(reverse(100));
     }
 }
